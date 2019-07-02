@@ -65,7 +65,7 @@ function getUserID(){
            
             postData.forEach(element=>{
                 
-                if(element.id == input || element.first_name == input){
+                if(element.id == input || element.first_name == input || element.last_name == input){
                    
                     html +=
                     `<div class="card" style="width: 18rem; margin-left:50px">
