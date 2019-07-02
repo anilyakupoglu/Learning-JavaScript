@@ -88,9 +88,6 @@ function getUserID(){
     xhr.send();
 }
 
-function getWithName(){
-
-}
 
 //if you are press Enter for search the user
 document.getElementById("inputurl").addEventListener("keyup", function(event) {
