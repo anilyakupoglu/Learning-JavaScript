@@ -58,14 +58,14 @@ function getUserID(){
         if(this.status ===200)
         {
             
-            var userid= document.getElementById("inputurl").value;
+            var input= document.getElementById("inputurl").value;
             let post = JSON.parse(this.responseText);
             let html="";
             var postData = post.data;
            
             postData.forEach(element=>{
                 
-                if(element.id == userid){
+                if(element.id == input || element.first_name == input){
                    
                     html +=
                     `<div class="card" style="width: 18rem; margin-left:50px">
@@ -88,6 +88,9 @@ function getUserID(){
     xhr.send();
 }
 
+function getWithName(){
+
+}
 
 //if you are press Enter for search the user
 document.getElementById("inputurl").addEventListener("keyup", function(event) {
